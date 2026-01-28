@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Python 3.14 (Krystalicks)" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="c07b27a1-36f9-4557-aaa1-ae1b818111cd" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14 (Krystalicks)" project-jdk-type="Python SDK" />
+</project>
