@@ -1,2 +1,8 @@
 var T 10
-print var T
+print val T
+
+var P 20
+var S 30
+add P S R 
+
+print var R
