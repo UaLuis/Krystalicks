@@ -1,35 +1,61 @@
-vals = {}
+import os, time
+
+def var(name, arg):
+    varS[name] = arg
+
+def prinK(arg, name):
+    if arg == "var":
+        print(varS[name])
+
+def add(var1, var2, name):
+    if var1 in varS and var2 in varS:
+        varS[name] = int(varS[var1]) + int(varS[var2])
+
+def sub(var1, var2, name):
+    if var1 in varS and var in varS:
+        varsS[name] = int(varS[var1]) - int(varS[var2])
+
+def mul(var1, var2, name):
+    if var1 in varS and var2 in varS:
+        varS[name] = int(varS[var1]) * int(varS[var2])
+
+def div(var1, var2, name):
+    if var1 in varS and vars in varS:
+        varS[name] = int(varS[var1]) / int(varS[var2])
+
+def ifK(arg1, arg2, fun):
+    pass
+
+def inputK(name):
+    varS[name] = input()
+
+def systemCalls(arg):
+    os.system(arg)
+
+def sleep(arg):
+    time.sleep(int(arg))
+
+fun = {
+    "var": var,
+    "print": prinK,
+    "add": add,
+    "sub": sub,
+    "mul": mul,
+    "div": div,
+    "if": ifK,
+    "input": inputK,
+    "systemCalls": systemCalls,
+    "sleep": sleep,
+}
+varS = {}
 
 def analyze(code):
     if len(code) == 4:
-        fun, als1, als2, als3 = code
+        funLine, arg1, arg2, arg3 = code
+        fun[funLine](arg1, arg2, arg3)
     elif len(code) == 3:
-        fun, als1, als2 = code
-        als3 = None  # на всяк випадок
+        funLine, arg1, arg2 = code
+        fun[funLine](arg1, arg2)
     elif len(code) == 2:
-        fun, als1 = code
-        als2 = als3 = None
-
-    match fun:
-        case 'var':
-            vals[als1] = als2
-
-        case 'print':
-            if als1 == 'var':
-                print(vals[als2])
-
-        case 'add':
-            if als1 in vals and als2 in vals and als3 is not None:
-                vals[als3] = int(vals[als1]) + int(vals[als2])
-
-        case 'sub':
-            if als1 in vals and als2 in vals and als3 is not None:
-                vals[als3] = int(vals[als1]) - int(vals[als2])
-
-        case 'mul':
-            if als1 in vals and als2 in vals and als3 is not None:
-                vals[als3] = int(vals[als1]) * int(vals[als2])
-
-        case 'div':
-            if als1 in vals and als2 in vals and als3 is not None:
-                vals[als3] = int(vals[als1]) / int(vals[als2])  # використовується справжнє ділення
+        funLine, arg1 = code
+        fun[funLine](arg1)

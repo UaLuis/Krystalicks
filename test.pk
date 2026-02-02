@@ -1,8 +1,8 @@
-var T 10
-print val T
+var T1 Hello 
+var T2 World
 
-var P 20
-var S 30
-add P S R 
+print var T1
+print var T2
 
-print var R
+sleep 2
+systemCalls ls
