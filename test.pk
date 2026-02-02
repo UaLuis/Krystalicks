@@ -2,3 +2,5 @@ var T 10
 var P Linux!
 print Hello! P
 
+if int T = 20 cursor print 1
+
