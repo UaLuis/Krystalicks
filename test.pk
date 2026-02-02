@@ -1,13 +1,4 @@
-#var T 10
-#var P Hello
-#print var T
-#print var P
-#sleep 2 (seconsd)
-#sub, add, mul, div
-#systemCalls ls/fastfetch and t.d 
-
-var T 2
+var T 10
 var P Linux!
-
-if T = 10 cursor print var P
+print Hello! P
 

@@ -4,18 +4,22 @@ def var(name, arg):
     varS[name] = arg
 
 def prinK(name1, name2=None):
+    if name2 is None:
+        if name1 in varS:
+            print(varS[name1])
+        else:
+            print(name1)
+        return
+
     if name1 in varS and name2 in varS:
         print(varS[name1], varS[name2])
     elif name1 in varS and name2 not in varS:
         print(varS[name1], name2)
     elif name1 not in varS and name2 in varS:
         print(name1, varS[name2])
-    elif name1 not in varS and name2 not in varS:
+    else:
         print(name1, name2)
-    elif name1 in varS and name2 == None:
-        print(name1)
-    elif name1 not in varS and name2 == None:
-        print(name1)
+
 
 def add(var1, var2, name):
     if var1 in varS and var2 in varS:
@@ -36,9 +40,9 @@ def div(var1, var2, name):
 def ifK(arg0, arg1, arg2, arg3, arg4, funLine, arg6):
     if arg1 and arg3 in varS:
         var1, var2 = varS[arg1], varS[arg3]
-    elif arg1 in varS and agr3 not in varS:
+    elif arg1 in varS and arg3 not in varS:
         var1, var2 = varS[arg1], arg3
-    elif arg3 in varS and agr1 not in varS:
+    elif arg3 in varS and arg1 not in varS:
         var2, var1 = varS[arg3], arg1
     elif arg1 and arg3 not in varS:
         var1, var2 = arg1, arg2
@@ -87,7 +91,7 @@ varS = {}
 
 def analyze(code):
     if len(code) == 8:
-        funLine, arg0, agr1, arg2, arg3, arg4, arg5, arg6 = code
+        funLine, arg0, arg1, arg2, arg3, arg4, arg5, arg6 = code
         fun[funLine](arg0, arg1, arg2, arg3, arg4, arg5, arg6)
 
     elif len(code) == 4:
