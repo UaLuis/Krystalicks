@@ -1,0 +1,12 @@
+var T 10
+var P Linux!
+print Hello P
+
+if int T < 20 cursor print T
+
+systemCalls fastfetch
+
+var Pi 14
+var Pi2 28
+add Pi Pi2 Pi3
+print Pi3
