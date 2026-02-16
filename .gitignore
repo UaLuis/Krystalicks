@@ -1,0 +1,11 @@
+# Davia
+.davia/
+.github/instructions/davia.instructions.md
+__pycache__
+test.py
+.venv
+main
+analyze
+tutorial.cpp
+
+
