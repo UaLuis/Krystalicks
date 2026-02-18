@@ -1,2 +1,4 @@
 int P 14
-print P;
+print int P
+str H Hello
+print str H
