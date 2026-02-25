@@ -7,7 +7,7 @@
 #include <vector>
 using namespace std;
 
-auto vars = unordered_map<string,variant<int,string>>();
+auto vars = unordered_map<string,variant<int,string> >();
 
 void analyze(string cmd1, string cmd2, string cmd3);
 

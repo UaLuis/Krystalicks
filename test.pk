@@ -59,4 +59,22 @@ create echo2 -> str var {
 print str var }
 
 create return -> int I, int V {
+dodat I V -> out
+print int out }
+
+array new [1,2,3,4]
+array new2 []
+
+print array new 0
+array new2 -> 0,'h'
+print array new2 0
+
+map Map1 int,int
+map Map2 str,str
+
+map Map1 -> 1,1
+map Map2 -> 'Hello',15
+
+print map Map1 1
+print map Map2 'Hello'
 
