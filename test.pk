@@ -1,4 +1,7 @@
 int P 14
+int N 14
+int S 15
+int Z 2
 float Pi 14.3
 
 str A "Hello"
@@ -16,6 +19,14 @@ print int 15
 print float 16.2
 
 print str "Hello World!"
+
+dodat P N -> E
+minus S P -> U
+pomnj S S -> O
+dilenn P Z -> C
+
+max P, E -> out
+min P, E -> out
 
 if int P = 14 {
 print str M }
@@ -47,4 +58,5 @@ print str Text }
 create echo2 -> str var {
 print str var }
 
-create 
+create return -> int I, int V {
+
