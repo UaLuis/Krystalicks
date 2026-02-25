@@ -1,8 +1,16 @@
+include "Hello"
+use_space Hello
+
+hello.red
+red
+
 int P 14
 int N 14
 int S 15
 int Z 2
 float Pi 14.3
+bool Te True
+bool Ti False
 
 str A "Hello"
 str B "Linux"
@@ -37,8 +45,24 @@ print float Pi }
 if str A = "Hello" and str B = "Linux" {
 print str "Linux is cool!" }
 
+if str A = "Hello" or str B = "Linux" {
+print str A, B }
+
+if str B not = "Hello" {
+print str B }
+
 if int P < 18 {
 print str "змінна P менша за 18" }
+
+if int P = 14 {
+print str "14"
+} else {
+print str "Not 14" }
+
+if bool Te = True {
+print int 1
+} elif bool Te = False {
+print int 0 }
 
 for str i in 0->5 {
 print str "BUG" }
@@ -53,7 +77,7 @@ while int P = 14 {
 print str M }
 
 create echo -> str Text {
-print str Text } 
+print str Text }
 
 create echo2 -> str var {
 print str var }
@@ -78,3 +102,5 @@ map Map2 -> 'Hello',15
 print map Map1 1
 print map Map2 'Hello'
 
+input -> outIn
+print str ouIn

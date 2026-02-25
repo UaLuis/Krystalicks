@@ -1,0 +1,8 @@
+create red {
+print str "255, 0, 0" }
+
+create blue {
+print str "0, 255, 0" }
+
+create green {
+pritn str "0, 0, 255" }
