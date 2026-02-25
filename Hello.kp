@@ -5,4 +5,4 @@ create blue {
 print str "0, 255, 0" }
 
 create green {
-pritn str "0, 0, 255" }
+print str "0, 0, 255" }

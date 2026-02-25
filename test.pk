@@ -1,4 +1,4 @@
-include "Hello"
+include "Hello.kp"
 use_space Hello
 
 hello.red
