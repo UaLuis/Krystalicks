@@ -25,7 +25,7 @@ int main() {
 
         ss >> cmd1 >> cmd2 >> cmd3;
         analyze(cmd1, cmd2, cmd3);
-            
+
         code.push_back(cmd1);
         code.push_back(cmd2);
         code.push_back(cmd3);
@@ -39,11 +39,11 @@ void analyze(string cmd1, string cmd2, string cmd3) {
         if (cmd1 == "int") {
             int value = stoi(cmd3);
             vars[cmd2] = value;
-            
+
         } else if (cmd1 == "str") {
             string value = cmd3;
             vars[cmd2] = value;
-            
+
         } else if (cmd1 == "print") {
             if (cmd2 == "int") {
                 cout << get<int>(vars[cmd3]) << endl;

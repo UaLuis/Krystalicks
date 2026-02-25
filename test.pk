@@ -1,4 +1,50 @@
 int P 14
-print int P
-str H Hello
-print str H
+float Pi 14.3
+
+str A "Hello"
+str B "Linux"
+
+str M "Hello Linux!"
+
+print str P
+print float Pi
+
+print str A, B
+print str M
+
+print int 15
+print float 16.2
+
+print str "Hello World!"
+
+if int P = 14 {
+print str M }
+
+if str A = "Hello" {
+print float Pi }
+
+if str A = "Hello" and str B = "Linux" {
+print str "Linux is cool!" }
+
+if int P < 18 {
+print str "змінна P менша за 18" }
+
+for str i in 0->5 {
+print str "BUG" }
+
+for str i in 0->10 {
+print str i }
+
+while True {
+print int 100 }
+
+while int P = 14 {
+print str M }
+
+create echo -> str Text {
+print str Text } 
+
+create echo2 -> str var {
+print str var }
+
+create 
